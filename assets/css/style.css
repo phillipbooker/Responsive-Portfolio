@@ -16,6 +16,7 @@ main {
     background-color: #ffffff;
     border: solid 1px #dddddd;
     padding: 15px;
+    padding-bottom: 30px;
     margin: auto;
     margin-bottom: 100px;
 }
@@ -128,13 +129,13 @@ footer.p-footer {
     width: 200px;
     height: 175px;
     /*background-image: url("http://lorempixel.com/200/200/");*/
-    margin: 15px 50px 15px 0px;
+    margin: 30px 50px 15px 30px;
     text-align: center;
     position: relative;
 }
 
 /*position absolute only works when parent position (.project) is relative*/
-.project a{
+/* .project a{
     text-decoration: none;
     color: #ffffff;
     background-color: #4aaaa5;
@@ -144,13 +145,27 @@ footer.p-footer {
     width: 100%;
     margin-bottom: 15px;
     padding: 15px 0px;
+} */
+.proj-link{
+    width: 100%;
+    /* max-width: 200px; */
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    background-color: #4aaaab;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-decoration: none;
 }
 
-#proj1{
+
+/* #proj1{
     background-image: url("../images/proj1.jpg");
-}
+} */
 
-#proj2{
+/* #proj2{
     background-image: url("../images/proj2.jpg");
 }
 
@@ -164,7 +179,9 @@ footer.p-footer {
 
 #proj5{
     background-image: url("../images/proj5.jpg");
-}
+} */
+
+
 
 form p{
     margin: 5px 0px;
@@ -187,4 +204,159 @@ input[type="submit"]{
     color: #ffffff;
     padding: 10px 20px;
     margin-top: 15px;
+}
+
+@media screen and (max-width: 980px){
+    main{
+        width: 600px;
+        /* float: left; */
+        margin-left: 100px;
+        margin-right: auto;
+    }
+
+    /*Can't get left border to stay with main content*/
+    .header-box{
+        /* width: 700px; */
+        width: 100%;
+        margin: auto;
+    }
+
+    /* .header-box{
+        width: 100%;
+        margin: auto;
+        position: static;
+    } */
+
+    .main-heading{
+        color: yellow;
+    }
+
+    #profile-pic{
+        float: left;
+        width: 200px;
+        height: 200px;
+    }
+    
+    #profile-bio{
+        float: left;
+        width: 50%;
+        margin-left: 20px;
+    }
+
+    /* footer {
+        position: static;
+    } */
+}
+
+
+@media screen and (max-width: 768px){
+    main{
+        max-width: 700px;
+        width: 100%;
+        margin: auto;
+    }
+
+    .header-box{
+        width: 100%;
+        margin: auto;
+        position: static;
+    }
+
+    .main-heading{
+        color: blue;
+    }
+
+    #profile-pic{
+        float: left;
+        width: 200px;
+        height: 200px;
+    }
+    
+    #profile-bio{
+        float: left;
+        width: 50%;
+        margin-left: 20px;
+    }
+
+    /* footer {
+        position: static;
+    } */
+}
+
+@media screen and (max-width: 640px){
+    main{
+        max-width: 500px;
+        width: 100%;
+        margin: auto;
+    }
+
+    .main-heading{
+        color: red;
+    }
+
+    .header-box{
+        width: 100%;
+        margin: auto;
+        position: static;
+    }
+
+    header h1{
+        float: none;
+        background-color: #4aaaa5;
+        text-align: center;
+        color: #ffffff;
+        height: 100%;
+        padding: 20px;
+        margin: 0;
+    }
+    
+    header nav{
+        float: none;
+        margin-top: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    #profile-pic{
+        float: none;
+        width: 200px;
+        height: 200px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 15px;
+        display: block;
+        border-radius: 15px;
+    }
+    
+    #profile-bio{
+        float: none;
+        width: 100%;
+        margin: auto;
+    }
+
+    footer {
+        position: static;
+    }
+
+    .project{
+        float: none;
+        height: 300px;
+        width: 300px;
+        /*background-image: url("http://lorempixel.com/200/200/");*/
+        /* margin: 15px 50px 15px 0px; */
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        position: relative;
+    }
+
+    .proj-pic{
+        object-fit: contain;
+        height: 300px;
+        width: 300px;
+    }
+
+    textarea{
+        min-height: 75px;
+    }
 }
