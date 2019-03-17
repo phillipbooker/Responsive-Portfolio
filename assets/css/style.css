@@ -26,6 +26,10 @@ h1, h2, h3, h4, h5, h6 {
     font-family: 'Georgia', Times, Times New Roman, serif;
 }
 
+p{
+    font-size: 1em;
+}
+
 header {
     background-color: #ffffff;
     border-bottom: solid 1.5px #cccccc;
@@ -239,7 +243,6 @@ input[type="submit"]{
     
     #profile-bio{
         float: left;
-        font-size: 1.5em;
         width: 50%;
         margin-left: 20px;
     }
