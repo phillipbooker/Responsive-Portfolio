@@ -121,7 +121,7 @@ footer.p-footer {
     margin-left: 20px;
 }
 
-.intro::after,
+
 .proj-row::after{
     display: block;
     content: "";
@@ -292,6 +292,7 @@ input[type="submit"]{
         max-width: 500px;
         width: 100%;
         margin: auto;
+        margin-bottom: 100px;
     }
 
     .main-heading{
@@ -338,9 +339,9 @@ input[type="submit"]{
         margin: auto;
     }
 
-    footer {
+    /* footer {
         position: static;
-    }
+    } */
 
     .project{
         float: none;
