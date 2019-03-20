@@ -121,7 +121,7 @@ footer.p-footer {
     margin-left: 20px;
 }
 
-
+#profile-bio,
 .proj-row::after{
     display: block;
     content: "";
